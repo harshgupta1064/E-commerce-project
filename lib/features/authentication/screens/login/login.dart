@@ -19,7 +19,7 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               //header
-            TLoginHeader(),
+            const TLoginHeader(),
             const TLoginForm(),
             //Divider
             TFormDivider(dividerText : TTexts.orSignInWith.capitalize!),
