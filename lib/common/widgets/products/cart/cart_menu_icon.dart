@@ -27,12 +27,14 @@ class TCartCounterIcon extends StatelessWidget {
             color: TColors.black.withOpacity(0.2),
             borderRadius: BorderRadius.circular(100),
           ),
-          child: Text(
-            '2',
-            style: Theme.of(context)
-                .textTheme
-                .labelLarge!
-                .apply(color: TColors.white, fontSizeFactor: 0.8),
+          child: Center(
+            child: Text(
+              '2',
+              style: Theme.of(context)
+                  .textTheme
+                  .labelLarge!
+                  .apply(color: TColors.white, fontSizeFactor: 0.8),
+            ),
           ),
         ),
       )
