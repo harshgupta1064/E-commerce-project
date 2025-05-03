@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:t_store/common/styles/shadows.dart';
+import 'package:t_store/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:t_store/common/widgets/images/t_rounded_images.dart';
 import 'package:t_store/utils/constants/colors.dart';
+import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/helpers/helper_functions.dart';
 
@@ -21,8 +24,17 @@ class TProductCardVertical extends StatelessWidget {
       child: Column(
         children: [
           // Thumbnail,Wishlish Button,Price Drop
-          
-          // Details
+          TRoundedContainer(
+            height: 180,
+            padding: const EdgeInsets.all(TSizes.sm),
+            backgroundColor: dark ? TColors.dark : TColors.light,
+            child: const Stack(
+              children: [
+                //Thumbnail Image
+                TRoundedImage(imageUrl: TImages.productImage1)
+              ],
+            ),
+          )
         ],
       ),
     );
